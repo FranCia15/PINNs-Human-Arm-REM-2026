@@ -1,0 +1,30 @@
+{
+  "subject_trial_counts": {
+    "s1": 20,
+    "s7": 20,
+    "s13": 20,
+    "s12": 20,
+    "s20": 20,
+    "s2": 20,
+    "s15": 20,
+    "s14": 20,
+    "s9": 20
+  },
+  "n_query_per_trial": 60,
+  "n_collocation_per_trial": 60,
+  "n_steps": 400,
+  "seed": 1,
+  "w_sup": 1.0,
+  "w_track": 1.0,
+  "w_track_rot": 0.05,
+  "w_limit": 1.0,
+  "w_effort_max": 0.0,
+  "effort_warmup_steps": 200,
+  "lr": 0.001,
+  "hidden": 256,
+  "n_layers": 4,
+  "tag": "diverse9x20_noeffort",
+  "dtype": "torch.float64",
+  "total_time_s": 25425.6676783,
+  "steps_completed": 400
+}

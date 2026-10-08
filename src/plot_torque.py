@@ -35,6 +35,7 @@ def main():
     t_rel, tau_gt, tau_pinn = compute_gt_and_pinn_torque(PAPER_MODEL, subject, tgt_number, smooth_hand=True, filt="butter")
     _, _, tau_no_effort = compute_gt_and_pinn_torque(ABLATION_MODEL, subject, tgt_number, smooth_hand=True, filt="butter")
 
+    plt.rcParams.update({"pdf.fonttype": 42, "ps.fonttype": 42})  # TrueType, IEEE PDF eXpress rejects Type 3
     fig, axes = plt.subplots(len(joints), 1, figsize=(4.5, 3.4), sharex=True, constrained_layout=True)
     for ax, col in zip(axes, joints):
         j = JOINT_COLS.index(col)

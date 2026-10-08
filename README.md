@@ -2,7 +2,7 @@
 
 Code, trained models and results for the paper
 
-> Ciampi, F.G., Diallo, T.M., and Plateaux, R., *A Physics-Informed Neural Network for Human Arm Motion Reconstruction in Digital Twins of Human-Robot Collaborative Systems*, 24th IEEE International Conference on Research & Education in Mechatronics, 12–13 November 2026, Eindhoven, The Netherlands, 2026.
+> Ciampi, F.G., Diallo, T.M.L., and Plateaux, R., *A Physics-Informed Neural Network for Human Arm Motion Reconstruction in Digital Twins of Human-Robot Collaborative Systems*, 24th IEEE International Conference on Research & Education in Mechatronics, 12–13 November 2026, Eindhoven, The Netherlands, 2026.
 
 A physics-informed neural network (PINN) reconstructs the 7-DOF human arm joint trajectory (shoulder pitch/roll, arm yaw, elbow pitch, forearm yaw, wrist pitch/roll) from a tracked hand trajectory and subject-specific anthropometry. A minimum-effort term based on a rigid-body (Euler–Lagrange) model of the arm resolves the arm's kinematic redundancy. The PINN is compared with a fixed-swivel inverse-kinematics baseline and a gradient-projection dynamics baseline on the DBAS22 / 3D-ARM-Gaze reaching dataset, and the reconstructed motion is played on a mannequin in a RoboDK digital twin.
 

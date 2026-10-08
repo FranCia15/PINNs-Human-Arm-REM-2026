@@ -125,7 +125,8 @@ def main():
     w, h = work.size
     work = work.crop((0, int(WORKCELL_CROP["t"] * h), int(w * (1 - WORKCELL_CROP["r"])), int(h * (1 - WORKCELL_CROP["b"]))))
     fracs = np.array(widths) / sum(widths)  # column widths, proportional to the windows
-    plt.rcParams.update({"font.family": "serif", "font.size": 8})
+    plt.rcParams.update({"font.family": "serif", "font.size": 8,
+                         "pdf.fonttype": 42, "ps.fonttype": 42})  # TrueType, IEEE PDF eXpress rejects Type 3
     width = 3.5  # in, one IEEE column
     head_h, title_h, cbar_h = 0.30, 0.16, 0.0 if PLAIN else 0.50
     cell_h = width * (up + down) / sum(widths)

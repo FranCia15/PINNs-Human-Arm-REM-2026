@@ -1,0 +1,15 @@
+name: pinn_arm_rem2026
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy=2.2
+  - scipy=1.15
+  - matplotlib=3.10
+  - pillow=12.3
+  - pytorch=2.5
+  - pip
+  - pip:
+      - robodk  # only for the scripts in robodk
